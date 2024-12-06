@@ -1,0 +1,36 @@
+2024-11-15 09:30:11.246654+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), [*]year INTEGER, primary key (id))"; attendu "identifier"
+Syntax error in SQL statement "create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), [*]year INTEGER, primary key (id))"; expected "identifier"; SQL statement:
+create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), year INTEGER, primary key (id)) [42001-224]
+2024-11-15 09:30:11.264657+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIES" non trouvée
+Table "MOVIES" not found; SQL statement:
+alter table if exists comments add constraint FKr1xv5xvew7k2aed5qu5lci3kt foreign key (movie_id) references movies [42102-224]
+2024-11-15 09:30:11.272656+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIES" non trouvée
+Table "MOVIES" not found; SQL statement:
+alter table if exists library_movies add constraint FKbadbwndps7cci2tv3e9j86q43 foreign key (movie_id) references movies [42102-224]
+2024-11-15 09:57:10.129320+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), [*]year INTEGER, primary key (id))"; attendu "identifier"
+Syntax error in SQL statement "create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), [*]year INTEGER, primary key (id))"; expected "identifier"; SQL statement:
+create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), year INTEGER, primary key (id)) [42001-224]
+2024-11-15 09:57:10.160349+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIES" non trouvée
+Table "MOVIES" not found; SQL statement:
+alter table if exists comments add constraint FKr1xv5xvew7k2aed5qu5lci3kt foreign key (movie_id) references movies [42102-224]
+2024-11-15 09:57:10.163324+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIES" non trouvée
+Table "MOVIES" not found; SQL statement:
+alter table if exists library_movies add constraint FKbadbwndps7cci2tv3e9j86q43 foreign key (movie_id) references movies [42102-224]
+2024-11-15 10:05:53.586222+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), [*]year INTEGER, primary key (id))"; attendu "identifier"
+Syntax error in SQL statement "create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), [*]year INTEGER, primary key (id))"; expected "identifier"; SQL statement:
+create table movies (id uuid not null, created_at TIMESTAMP WITH TIME ZONE not null, updated_at TIMESTAMP WITH TIME ZONE not null, genre VARCHAR(255), imdb_id VARCHAR(255) not null, name VARCHAR(255) not null, plot VARCHAR(1000), poster_url VARCHAR(1000), year INTEGER, primary key (id)) [42001-224]
+2024-11-15 10:05:53.617654+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIES" non trouvée
+Table "MOVIES" not found; SQL statement:
+alter table if exists comments add constraint FKr1xv5xvew7k2aed5qu5lci3kt foreign key (movie_id) references movies [42102-224]
+2024-11-15 10:05:53.620657+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIES" non trouvée
+Table "MOVIES" not found; SQL statement:
+alter table if exists library_movies add constraint FKbadbwndps7cci2tv3e9j86q43 foreign key (movie_id) references movies [42102-224]

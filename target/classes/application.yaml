@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  application.name: backend
+  datasource:
+#    url: jdbc:h2:mem:moviedb
+#    url: jdbc:h2:file:./data/moviedb;NON_KEYWORDS=year
+    url: jdbc:postgresql://localhost:5432/toto
+    username: tata
+    password: titi
+#    driverClassName: org.h2.Driver
+    driverClassName: org.postgresql.Driver
+  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+ # h2:
+  #  console:
+   #   enabled: true # Enable H2 console served on /h2-console
+
+jwt:
+  privateKey: MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgO8Nm9Rv9Kz2J7TLtdoIjHDL5Mo4WCWS0ixQfGwxBqGahRANCAAQpbN6OWGmhJFO99NzDu89U2HjIFzIDw8417Y7LFqTJ3+FJXv99EDPjHfJhZKkuD66FEjUflmadCFHdy1dkss1j
+  publicKey: MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKWzejlhpoSRTvfTcw7vPVNh4yBcyA8PONe2Oyxakyd/hSV7/fRAz4x3yYWSpLg+uhRI1H5ZmnQhR3ctXZLLNYw==
+  validity: 3600 # 1 hour
+  algorithm: EC
+  issuer: backend-movie
+
+logging.level:
+  com.fullstack.movies.backend: DEBUG
+
+custom:
+  value: 42
